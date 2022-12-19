@@ -1,8 +1,8 @@
-import discord, string, sys, os
-#os.chdir(os.path.split(sys.argv[0])[0]) #VScode starting in py directory, for some reason
+import discord, string
 from hangman import hangman_game
 
-TOKEN = "TOKEN"
+with open("token") as f:
+    TOKEN = f.read()
 
 bot = discord.Client()
 
