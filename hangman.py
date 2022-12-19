@@ -1,6 +1,5 @@
-import random, string, copy, sys, os
+import random, string, copy
 from dataclasses import dataclass
-#os.chdir(os.path.split(sys.argv[0])[0]) #VScode starting in py directory, for some reason
 
 words = []
 with open('words.txt', 'r') as f:
